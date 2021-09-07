@@ -1,3 +1,4 @@
+/* eslint-disable jest/valid-expect */
 /* eslint-disable no-undef */
 /// <reference types="Cypress" />
 
