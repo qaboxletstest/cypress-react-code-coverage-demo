@@ -19,7 +19,7 @@ This module assumes standard Create-React-App v3 JavaScript application with sou
 
 When the app starts with yarn start, you should see the coverage information under window.__coverage__ information.
 
-I've a production version of same app hosted at https://qaboxletstest-reacttodo.netlify.app/. The code for production version is not rightly not instrumented.
+I've a production version of same app hosted at https://qaboxletstest-reacttodo.netlify.app/. The code for production version is rightly not instrumented.
 
 ###### Exclude files
 If you want to exclude files from coverage, for example src/serviceWorker.js, add an object named nyc to package.json following the nyc CLI configuration.
