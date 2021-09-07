@@ -23,11 +23,30 @@
     "workbox-strategies": "^5.1.3",
     "workbox-streams": "^5.1.3"
   },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.9.10",
+    "@cypress/instrument-cra": "^1.4.0",
+    "cypress": "^8.3.1",
+    "uuid": "^8.3.2",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60"
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "cypress open",
+    "cy:run": "cypress run",
+    "ex:file": "npx nyc report --reporter=lcov"
+  },
+  "nyc": {
+    "exclude": [
+      "src/service-worker.js",
+      "src/serviceWorkerRegistration.js",
+      "src/reportWebVitals.js"
+    ]
   },
   "eslintConfig": {
     "extends": [
