@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+`npx create-react-app cypress-react-code-coverage-demo --template cra-template-pwa`
+
 ## Instrument Application Code - https://www.npmjs.com/package/@cypress/instrument-cra
 Little module for CRA applications to instrument code without ejecting react-scripts
 `npm i -D @cypress/instrument-cra`
